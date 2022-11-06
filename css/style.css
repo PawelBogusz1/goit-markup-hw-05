@@ -65,7 +65,9 @@ border-color: var(--brand-color-background3);
 
 .naglowek1{
     display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
   gap:46px;
 }
 
@@ -88,46 +90,35 @@ border-color: var(--brand-color-background3);
   
 }
    
-.naglowek1 {
-    position:relative;
+
+
+
+.naszeatuty{
+    fill: var(--brand-color-czcionka1);
+    background: var(--brand-color-background2);
+    padding: 25px; 0;
 }
 
-.naglowek1::after {
-    content:"";
-    position:absolute;
-    width:100%;
-    height:4px;
-    background-color: :var(--brand-color-background4);
-    bottom: -32px;
-    top:10px;
- 
-}
-        .naszeatuty{
-        fill: var(--brand-color-czcionka1);
-        background: var(--brand-color-background2);
-               padding: 25px; 0;
-    }
-
-    .klienci{   
-          fill: #AFB1B8;
-        border: 1px solid #AFB1B8;
-border-radius: 4px;
-transition-property: border-color;
-transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    }
+.klienci{   
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
+}
+
 .klienci:hover,
 .klienci:focus{
- border-color: var(--brand-color-background4);
-  
+    border-color: var(--brand-color-background4);
+    
 }
 
       .klienci{   
           fill: #AFB1B8;
         border: 1px solid #AFB1B8;
-border-radius: 4px;
+        border-radius: 4px;
 transition-property: fill;
 transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -160,8 +151,8 @@ gap:10px;
 
 
  }
-
-.social{
+ 
+ .social{
    
     margin: 0.0rem;
  padding: 0.6rem;
@@ -175,18 +166,18 @@ gap:10px;
   .social:hover{
        background: radial-gradient(circle, #2196f3 70%, #ffffff 70%);
       fill:white;
-  }
+    }
 
 
-.social2{
-justify-content:flex-start;
+    .social2{
+        justify-content:flex-start;
       margin: 0.0rem;
  padding: 0.6rem;
 Fill: #AFB1B8;
 background: radial-gradient(circle,rgba(255, 255, 255, 0.1)70% 70%, var(--brand-color-background)70%);
 transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- 
+  
 
     }
 
@@ -194,7 +185,7 @@ transition: 250ms;
    background: radial-gradient(circle, #2196f3 70%, var(--brand-color-background)70%);
    fill:white;
 
-}
+  }
 
 .button2{
         font-size: 16px;
@@ -299,8 +290,53 @@ footer{
         letter-spacing: 0.02em;
         transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      
+
+          }
+
+          .link4{
+    color:var(--brand-color);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+          }
+
+
+.link2,
+.link4{
+position: relative;
+}
+    .link2::after{
+        content:"";
+        position:absolute;
+        width:53px;
+        height:4px;
+        background-color: var(--brand-color-background4);
+        bottom:-33px;
+        left: 0px;
+       
     }
+       .link4::after{
+        content:"";
+        position:absolute;
+        width:53px;
+        height:4px;
+        background-color: var(--brand-color-background4);
+        bottom:-33px;
+        left: 0px;
+       }
+
+    .link2:hover::after{
+        color:var(--brand-color-background4);
+    }
+
+    .link4:hover::after{
+        color:var(--brand-color-background4);
+    }
+
 .link6{
     color:var(--brand-color-czcionka1);
         font-size: 14px;
@@ -540,6 +576,7 @@ gap:30px;
 .link1:hover,
 .link2:hover,
 .link3:hover,
+.link4:hover,
 .link8:hover,
 .link9:hover,
 .link10:hover
@@ -552,6 +589,7 @@ gap:30px;
 .link1:focus,
 .link2:focus,
 .link3:focus,
+.link4:focus
 .link8:focus,
 .link9:focus,
 .link10:focus
@@ -585,6 +623,7 @@ color:var(--brand-color);
 .link1,
 .link2,
 .link3,
+.link4,
 .link6,
 .link8,
 .link9,
